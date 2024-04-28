@@ -25,7 +25,7 @@ Bloom: 1. Render the scene to the texture and extract the highlighted parts: blo
 Shadow Map: Depth map generated: shadow_mapping_dept. vert/ shadow_mapping_dept. frag<br/>
 
 PBR: Implementation of advanced PBR shaders in pbr.vert/pbr.frag<br/>
-
+<br/>
 1. First it needs to render the entire scene into a framebuffer object, and the entire rendering result can be manipulated in the subsequent processing.
 
 2. By extracting the bright part of the rendering result, the area where bloom effect needs to be applied can be obtained. A specific threshold value can be used to determine whether the brightness of the pixel has reached a certain requirement, and these parts with higher brightness can be extracted.
