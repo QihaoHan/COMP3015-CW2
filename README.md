@@ -16,15 +16,15 @@ F: Turn off the light
 
 ## How does the program work
 
-This OpenGL-based application showcases fundamental 3D graphics techniques, providing an immersive scene with Phong lighting, basic textures, skybox, and interactive controls:<br>
+Courework2 is based on the original Courework1 implementation of Bloom, shadow map and PBR.<br/>
 
-Basic Lighting: Implements the Phong lighting model, creating lifelike interactions between light and objects through ambient, diffuse, and specular reflections.<br>
+Bloom: 1. Render the scene to the texture and extract the highlighted parts: bloom.vert/bloom.frag
+2. blur the highlighted part with two pass Gaussian blur: blur.vert/blur.frag
+3. Synthesize the highlighted part and normal scene (including the HDR Tonemapping part) : bloom_final.vert/bloom_final.frag
 
-Basic textures: Apply detailed images to the surface of a 3D model with texture mapping, enhancing its appearance with details such as color, pattern, and material properties.<br>
+Shadow Map: Depth map generated: shadow_mapping_dept. vert/ shadow_mapping_dept. frag
 
-Skybox: Uses a cubemap to render a surrounding environment, offering a distant background that adds depth and immersion to the 3D space.<br>
-
-Mouse and Keyboard Controls: The user can control the movement by moving the angle of view with the mouse, WASD, and T and F can control the switch of light.<br>
+PBR: Implementation of advanced PBR shaders in pbr.vert/pbr.frag
 
 ## Video Link
 YouTube: 
