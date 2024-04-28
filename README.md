@@ -26,6 +26,14 @@ Shadow Map: Depth map generated: shadow_mapping_dept. vert/ shadow_mapping_dept.
 
 PBR: Implementation of advanced PBR shaders in pbr.vert/pbr.frag<br/>
 
+1. First it needs to render the entire scene into a framebuffer object, and the entire rendering result can be manipulated in the subsequent processing.
+
+2. By extracting the bright part of the rendering result, the area where bloom effect needs to be applied can be obtained. A specific threshold value can be used to determine whether the brightness of the pixel has reached a certain requirement, and these parts with higher brightness can be extracted.
+
+3. Gaussian blur is processed for the extracted part with high brightness, so that the surrounding pixels are smoothly mixed, thus simulating the scattering effect of light. This process can be iterated many times to enhance the blur effect.
+
+4. Synthesize the original rendering result and the result after Gaussian blur processing to obtain the final bloom effect.
+
 ## Video Link
 YouTube: 
 
