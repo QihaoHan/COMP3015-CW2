@@ -35,7 +35,7 @@ PBR: Implementation of advanced PBR shaders in pbr.vert/pbr.frag
 4. Synthesize the original rendering result and the result after Gaussian blur processing to obtain the final bloom effect.
 
 ## Video Link
-YouTube: 
+YouTube: https://youtu.be/FHyhOjigYQY
 
 ## Git Repository
 GitHub: https://github.com/QihaoHan/COMP3015-CW2
