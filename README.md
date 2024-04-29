@@ -16,7 +16,7 @@ F: Turn off the light
 
 ## How does the program work
 
-Courework2 is based on the original Courework1 implementation of Bloom, shadow map and PBR.<br/>
+Coursework2 is based on the original Coursework1 implementation of Bloom, shadow map and PBR.<br/>
 
 Bloom: 1. Render the scene to the texture and extract the highlighted parts: bloom.vert/bloom.frag<br/>
 2. blur the highlighted part with two pass Gaussian blur: blur.vert/blur.frag<br/>
